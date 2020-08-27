@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+    com.laputa.pdm.common.log.LogAutoConfiguration
+org.springframework.context.ApplicationContextInitializer=\
+    com.laputa.pdm.common.log.init.ApplicationLoggerInitializer

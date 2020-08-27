@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.laputa.pdm.common.security.component.GlobalExceptionHandlerResolver,\
+  com.laputa.pdm.common.security.component.LaputaTokenEnhancer,\
+  com.laputa.pdm.common.security.service.LaputaUserDetailsServiceImpl

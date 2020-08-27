@@ -1,0 +1,24 @@
+server:
+  port: 6020
+
+spring:
+  application:
+    name: @artifactId@
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS-HOST:laputa-register}:${NACOS-PORT:8848}
+      config:
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+        file-extension: yml
+        shared-dataids: application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+  profiles:
+    active: dev
+
+## 以下配置剪切到配置中心
+security:
+  oauth2:
+    client:
+      client-id: laputa
+      client-secret: laputa
+      scope: server

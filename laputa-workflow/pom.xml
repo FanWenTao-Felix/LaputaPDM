@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.laputa</groupId>
+        <artifactId>laputa-pdm</artifactId>
+        <version>1.2.0</version>
+    </parent>
+
+    <artifactId>laputa-workflow</artifactId>
+
+    <description>laputa 工作流管理</description>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>laputa-workflow-api</module>
+        <module>laputa-workflow-biz</module>
+    </modules>
+
+
+
+</project>

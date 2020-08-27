@@ -1,0 +1,9 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+    com.laputa.pdm.common.data.cache.RedisTemplateConfig,\
+    com.laputa.pdm.common.data.cache.RedisCacheManagerConfig,\
+    com.laputa.pdm.common.data.cache.RedisCacheAutoConfiguration,\
+    com.laputa.pdm.common.data.tenant.LaputaTenantConfigProperties,\
+    com.laputa.pdm.common.data.tenant.TenantContextHolderFilter,\
+    com.laputa.pdm.common.data.tenant.LaputaFeignTenantConfiguration,\
+    com.laputa.pdm.common.data.mybatis.MybatisPlusConfig,\
+    com.laputa.pdm.common.data.resolver.WebMvcConfig

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.springframework.cloud</groupId>
+		<artifactId>spring-cloud-dependencies-parent</artifactId>
+		<version>2.1.6.RELEASE</version>
+		<relativePath/>
+	</parent>
+
+	<groupId>com.laputa</groupId>
+	<artifactId>laputa-common-bom</artifactId>
+	<packaging>pom</packaging>
+	<version>1.2.0</version>
+	<description>laputa 公共版本控制</description>
+
+	<properties>
+		<laputa.version>1.2.0</laputa.version>
+		<mybatis-plus.version>3.3.0</mybatis-plus.version>
+		<druid.version>1.1.21</druid.version>
+		<mysql.connector.version>8.0.18</mysql.connector.version>
+		<swagger.core.version>1.5.22</swagger.core.version>
+		<mp.weixin.version>3.6.0</mp.weixin.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.laputa</groupId>
+				<artifactId>laputa-common-core</artifactId>
+				<version>${laputa.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.laputa</groupId>
+				<artifactId>laputa-common-data</artifactId>
+				<version>${laputa.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.laputa</groupId>
+				<artifactId>laputa-common-gateway</artifactId>
+				<version>${laputa.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.laputa</groupId>
+				<artifactId>laputa-common-datasource</artifactId>
+				<version>${laputa.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.laputa</groupId>
+				<artifactId>laputa-common-job</artifactId>
+				<version>${laputa.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.laputa</groupId>
+				<artifactId>laputa-common-log</artifactId>
+				<version>${laputa.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.laputa</groupId>
+				<artifactId>laputa-common-minio</artifactId>
+				<version>${laputa.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.laputa</groupId>
+				<artifactId>laputa-common-security</artifactId>
+				<version>${laputa.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.laputa</groupId>
+				<artifactId>laputa-common-sentinel</artifactId>
+				<version>${laputa.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.laputa</groupId>
+				<artifactId>laputa-common-sequence</artifactId>
+				<version>${laputa.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.laputa</groupId>
+				<artifactId>laputa-common-swagger</artifactId>
+				<version>${laputa.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.laputa</groupId>
+				<artifactId>laputa-common-transaction</artifactId>
+				<version>${laputa.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.laputa</groupId>
+				<artifactId>laputa-upms-api</artifactId>
+				<version>${laputa.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.laputa</groupId>
+				<artifactId>laputa-message-api</artifactId>
+				<version>${laputa.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.laputa</groupId>
+				<artifactId>laputa-doc-api</artifactId>
+				<version>${laputa.version}</version>
+			</dependency>
+			<!--mybatis plus extension,包含了mybatis plus core-->
+			<dependency>
+				<groupId>com.baomidou</groupId>
+				<artifactId>mybatis-plus-extension</artifactId>
+				<version>${mybatis-plus.version}</version>
+			</dependency>
+			<!--mybatis-->
+			<dependency>
+				<groupId>com.baomidou</groupId>
+				<artifactId>mybatis-plus-boot-starter</artifactId>
+				<version>${mybatis-plus.version}</version>
+			</dependency>
+			<!-- druid 连接池 -->
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>druid-spring-boot-starter</artifactId>
+				<version>${druid.version}</version>
+			</dependency>
+			<!--mysql 驱动-->
+			<dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>${mysql.connector.version}</version>
+			</dependency>
+			<!--swagger 最新依赖内置版本-->
+			<dependency>
+				<groupId>io.swagger</groupId>
+				<artifactId>swagger-models</artifactId>
+				<version>${swagger.core.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.swagger</groupId>
+				<artifactId>swagger-annotations</artifactId>
+				<version>${swagger.core.version}</version>
+			</dependency>
+			<!--微信依赖-->
+			<dependency>
+				<groupId>com.github.binarywang</groupId>
+				<artifactId>weixin-java-mp</artifactId>
+				<version>${mp.weixin.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.binarywang</groupId>
+				<artifactId>weixin-java-common</artifactId>
+				<version>${mp.weixin.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+
+	</build>
+</project>

@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.laputa.pdm.common.core.config.JacksonConfig,\
+  com.laputa.pdm.common.core.config.MessageSourceConfig,\
+  com.laputa.pdm.common.core.config.RestTemplateConfig,\
+  com.laputa.pdm.common.core.util.SpringContextHolder

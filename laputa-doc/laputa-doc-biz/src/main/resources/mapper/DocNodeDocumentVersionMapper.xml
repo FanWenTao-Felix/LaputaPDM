@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  ~
+  ~      Copyright (c) 2018-2025, Sommer 20200212 All rights reserved.
+  ~
+  ~  Redistribution and use in source and binary forms, with or without
+  ~  modification, are permitted provided that the following conditions are met:
+  ~
+  ~ Redistributions of source code must retain the above copyright notice,
+  ~  this list of conditions and the following disclaimer.
+  ~  Redistributions in binary form must reproduce the above copyright
+  ~  notice, this list of conditions and the following disclaimer in the
+  ~  documentation and/or other materials provided with the distribution.
+  ~  Neither the name of the laputapdm.com developer nor the names of its
+  ~  contributors may be used to endorse or promote products derived from
+  ~  this software without specific prior written permission.
+  ~  Author: Sommer (sommer_jiang@163.com)
+  ~
+  -->
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.laputa.pdm.doc.mapper.DocNodeDocumentVersionMapper">
+
+  <resultMap id="docNodeDocumentVersionMap" type="com.laputa.pdm.doc.entity.DocNodeDocumentVersion">
+                  <id property="id" column="id"/>
+                        <result property="author" column="author"/>
+                        <result property="checksum" column="checksum"/>
+                        <result property="comment" column="comment"/>
+                        <result property="vaultId" column="vault_id"/>
+                        <result property="createTime" column="create_time"/>
+                        <result property="current" column="current"/>
+                        <result property="documentId" column="document_id"/>
+                        <result property="parent" column="parent"/>
+                        <result property="previous" column="previous"/>
+                        <result property="stage" column="stage"/>
+                        <result property="major" column="major"/>
+                        <result property="minor" column="minor"/>
+            </resultMap>
+</mapper>

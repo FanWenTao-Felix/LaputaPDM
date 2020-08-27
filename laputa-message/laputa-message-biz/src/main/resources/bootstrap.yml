@@ -1,0 +1,52 @@
+server:
+  port: 6010
+
+spring:
+  application:
+    name: @artifactId@
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS-HOST:laputa-register}:${NACOS-PORT:8848}
+      config:
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+        file-extension: yml
+        shared-dataids: application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+  profiles:
+    active: dev
+
+## 以下配置剪切到配置中心
+security:
+  oauth2:
+    client:
+      client-id: laputa
+      client-secret: laputa
+      scope: server
+
+# src/main/resources/config/mqtt.properties
+##################
+#  MQTT 配置
+##################
+# 用户名
+mqtt:
+  username: admin
+  # 密码
+  password: password
+  # 推送信息的连接地址，如果有多个，用逗号隔开，如：tcp://127.0.0.1:61613,tcp://192.168.1.61:61613
+  url: tcp://39.105.72.237:1883
+  ##################
+  #  MQTT 生产者
+  ##################
+  # 连接服务器默认客户端ID
+  producer:
+    clientId: mqttProducer
+  # 默认的推送主题，实际可在调用接口时指定
+    defaultTopic: topic1
+  ##################
+  #  MQTT 消费者
+  ##################
+  # 连接服务器默认客户端ID
+  consumer:
+    clientId: mqttConsumer
+  # 默认的接收主题，可以订阅多个Topic，逗号分隔
+    defaultTopic: ETEKOA/#,ETEK_REGISTER,ETEKWILL

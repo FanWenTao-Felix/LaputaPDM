@@ -1,0 +1,7 @@
+127.0.0.1 laputa-register
+127.0.0.1 laputa-gateway
+127.0.0.1 laputa-redis
+127.0.0.1 laputa-zookeeper
+127.0.0.1 laputa-xxl
+127.0.0.1 laputa-mysql
+127.0.0.1 laputa-sentinel
